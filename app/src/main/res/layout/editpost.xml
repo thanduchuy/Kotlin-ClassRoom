@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/dialogNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textColorHint="#FFF"
+        android:inputType="textPersonName"
+        android:background="@drawable/inputpost"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        />
+    <EditText
+        android:id="@+id/dialogContentEt"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter Name"
+        android:textColorHint="#FFF"
+        android:inputType="textPersonName"
+        android:background="@drawable/inputpost"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/dialogUpdateBtn"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@drawable/btncreate"
+            />
+        <Button
+            android:id="@+id/dialogRemoveBtn"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:background="@drawable/btnremove"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <Button
+            android:id="@+id/dialogCancelBtn"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btncancle"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</LinearLayout>

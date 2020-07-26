@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.classroom">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RankActivity"></activity>
+        <activity android:name=".DetailHomeWork" />
+        <activity android:name=".CreateHWActivity" />
+        <activity android:name=".HomeWorks" />
+        <activity android:name=".DashBoardActivity" />
+        <activity android:name=".Quiz_DetailActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".Quiz_CreateActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".adapters.PostActivity" />
+        <activity android:name=".SliderBarActivity" />
+        <activity android:name=".ClassActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".CreateActivity" />
+        <activity android:name=".SubjectActivity" />
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

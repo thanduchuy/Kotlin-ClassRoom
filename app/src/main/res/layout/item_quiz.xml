@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:padding="12dp"
+        android:background="@drawable/bgitem"
+        android:layout_marginTop="20dp"
+        android:id="@+id/quiz_item"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/order"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".70"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivItemTitle"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Lập trình di động"
+                android:layout_marginLeft="12dp"
+                />
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentStart="true"
+               >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ivItemCode"
+                        android:textSize="16sp"
+                        android:textColor="#DDDDDD"
+                        android:text="Mã : 31231391"
+                        android:layout_marginLeft="12dp"
+                        android:layout_gravity="center"
+                        />
+                    <ImageView
+                        android:id="@+id/dashboard"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/podium"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+                <ImageView
+               android:id="@+id/uidDone"
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:src="@drawable/done"
+               android:layout_alignParentEnd="true"
+               />
+           </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

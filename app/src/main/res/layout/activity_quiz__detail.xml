@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz_DetailActivity"
+    android:background="@drawable/bgpost"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bgquestion"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="290dp"
+        android:layout_height="150dp" >
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textQuestion"
+            android:textColor="#332FA2"
+            android:textSize="26sp"
+            android:layout_width="220dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_height="wrap_content"
+            android:text="Hãy trả lời câu hỏi" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:text="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".85"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/textA"
+            android:paddingLeft="8dp"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/a"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:text="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".85"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/textB"
+            android:paddingLeft="8dp"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/b"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:text="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".85"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:id="@+id/textC"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/c"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="8dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:text="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".85"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:id="@+id/textD"
+            android:paddingLeft="8dp"
+            />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/d"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".15" />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgpurple"
+        android:layout_width="200dp"
+        android:layout_height="80dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/textTitle"
+            android:text="Câu trả lời : "
+            android:textSize="24sp"
+            android:textColor="#FFF"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            />
+        <Button
+            android:id="@+id/btn_continue"
+            android:background="@drawable/btncontinue"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Tiếp tục"
+            android:layout_alignParentEnd="true"
+            android:textColor="#332FA2"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutParent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>

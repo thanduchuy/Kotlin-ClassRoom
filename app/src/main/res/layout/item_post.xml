@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/homework"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/borderradius"
+            android:orientation="horizontal"
+            android:paddingVertical="15dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".30"
+                android:src="@drawable/study" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".70"
+                android:orientation="vertical">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="8dp"
+                   >
+                   <TextView
+                       android:id="@+id/titlePost"
+                       android:layout_width="200dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="left"
+                       android:text="Bài tập mới: tóm tắt + btvn buổi 1"
+                       android:textSize="20sp"
+                       android:textStyle="bold"
+                       android:layout_alignParentStart="true"
+                       />
+                   <ImageView
+                       android:id="@+id/btnEdit"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:src="@drawable/ruler"
+                       android:layout_alignParentEnd="true"
+                       android:visibility="gone"
+                       />
+               </RelativeLayout>
+                <TextView
+                    android:id="@+id/contentPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="27 tháng 1"
+                    android:textColor="#999999"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/datePost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="27 tháng 1"
+                    android:textColor="#C0C0C0"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/radiusbottom"
+            android:orientation="horizontal"
+            android:paddingVertical="15dp"
+            android:id="@+id/goChat"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingHorizontal="30dp"
+                android:text="Thêm nhận xét của lớp học"
+                android:textColor="#C0C0C0"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
